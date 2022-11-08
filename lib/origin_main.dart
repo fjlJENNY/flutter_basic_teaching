@@ -105,26 +105,26 @@ class _MyHomePageState extends State<MyHomePage> {
             LayoutBuilder(
               builder: (BuildContext context, BoxConstraints constraints) {
                 print("constraints : $constraints");
-                return LimitedBox(
-                  maxWidth: constraints.maxWidth,
-                  maxHeight: constraints.maxHeight,
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: Padding(
-                      padding: EdgeInsets.zero,
-                      child: ColoredBox(
-                        color: Colors.red,
-                        child: ClipPath(
-                          clipBehavior: Clip.none,
-                          child: DecoratedBox(
-                            decoration: BoxDecoration(
-                              border: Border.all(width: 1.0),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.all(2.0),
-                              child: Transform(
-                                transform: Matrix4.skewY(0.3),
-                                child: const Text('Apartment for rent!'),
+                return Transform(
+                  transform: Matrix4.skewY(0.3),
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: LimitedBox(
+                      maxWidth: constraints.maxWidth,
+                      maxHeight: constraints.maxHeight,
+                      child: Align(
+                        alignment: Alignment.center,
+                        child: Padding(
+                          padding: EdgeInsets.zero,
+                          child: ColoredBox(
+                            color: Colors.red,
+                            child: ClipPath(
+                              clipBehavior: Clip.none,
+                              child: DecoratedBox(
+                                decoration: BoxDecoration(
+                                  border: Border.all(width: 1.0),
+                                ),
+                                child: Text('Apartment for rent!'),
                               ),
                             ),
                           ),
@@ -136,24 +136,29 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             LayoutBuilder(
-                builder: (BuildContext context, BoxConstraints constraints) {
-              return Container(
-                alignment: Alignment.center,
-                constraints: BoxConstraints(
-                  maxHeight: constraints.maxHeight,
-                  maxWidth: constraints.maxWidth,
-                ),
-                decoration: BoxDecoration(
-                  color: Colors.red,
-                  border: Border.all(width: 1.0),
-                ),
-                padding: EdgeInsets.zero,
-                margin: const EdgeInsets.all(2.0),
-                transform: Matrix4.skewY(0.3),
-                clipBehavior: Clip.none,
-                child: const Text('Apartment for rent!'),
-              );
-            }),
+              builder: (BuildContext context, BoxConstraints constraints) {
+                return Align(
+                  alignment: Alignment.center,
+                  child: Container(
+                    constraints: BoxConstraints(
+                      maxHeight: constraints.maxHeight,
+                      maxWidth: constraints.maxWidth,
+                      minWidth: constraints.minWidth,
+                      minHeight: constraints.minHeight,
+                    ),
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      border: Border.all(width: 1.0),
+                    ),
+                    padding: EdgeInsets.zero,
+                    margin: const EdgeInsets.all(2.0),
+                    transform: Matrix4.skewY(0.3),
+                    clipBehavior: Clip.none,
+                    child: const Text('Apartment for rent!'),
+                  ),
+                );
+              },
+            ),
           ],
         ),
       ),

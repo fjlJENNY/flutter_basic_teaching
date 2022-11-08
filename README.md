@@ -1,19 +1,11 @@
-# flutter_basic_teaching
+ 
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
+ 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+[在线文档](https://docs.flutter.dev/), 
 
 
 
@@ -23,3 +15,8 @@ lib/origin_main.dart
 lib/i_layout
 i_understanding_constraints.dart  了解 constraints
 [understanding constraints 官方文档](https://docs.flutter.dev/development/ui/layout/constraints)
+
+
+
+> [更多文章 《写给前端工程师的Flutter教程 腾讯IVWEB团队》 
+ ](https://juejin.cn/post/6844903918351155213#heading-10)
