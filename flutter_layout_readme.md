@@ -30,6 +30,8 @@
 [官方介绍 Constraints （了解松约束，紧约束） ](https://docs.flutter.dev/development/ui/layout/box-constraints)  
 [官方推荐的文档 深入理解 Constraints](https://docs.flutter.dev/development/ui/layout/constraints)
 
+ 
+
 
 > tips:  使用 LayoutBuilder 可以查看父级传递过来的 constraints ()
 
