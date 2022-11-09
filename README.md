@@ -1,6 +1,6 @@
  
 ## 代码导读
-- lib/origin_main.dart *Flutter 默认初始化的文件*
+- lib/main.dart *Flutter 默认初始化的文件*
 
  - i_understanding_constraints.dart    *了解 constraints*    
  - i_basic_layout_example.dart   *基础布局*
@@ -33,6 +33,15 @@
  ](https://juejin.cn/post/6844903918351155213#heading-10)
 
 
+ 
+
+ ## 项目运行
+ 
+ `flutter create --platforms=android .`
+  
+ `flutter pub get`
+ 
+ `flutter run`  
  
 
 

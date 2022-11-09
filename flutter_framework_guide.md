@@ -3,9 +3,9 @@
 
 Flutter 框架分为2条主线
 
-1. Build (build)   
+# **1. Build (build)**
 
-**BuildOwner**   贯穿了整个 Build
+### **BuildOwner**   贯穿了整个 Build
     
     Widget 构建 -> Element 树 ->  RenderObject 树 
 
@@ -14,9 +14,9 @@ Flutter 框架分为2条主线
     RenderObject 树 主要提供 ”canvas" 绘制的信息。比如 Constraints, Size, Offset 等
 
 
-2. Render(layout , render)   
+# **2. Render(layout , render)**  
  
-**PiplineOwner**  贯穿整个 Render, RenderObject 挂载的owner 就是此处owner    
+### **PiplineOwner**  贯穿整个 Render, RenderObject 挂载的owner 就是此处owner    
 
       
 
@@ -26,4 +26,4 @@ Flutter 框架分为2条主线
 ![render piple](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2019/3/5/1694a19f7dd0da57~tplv-t2oaga2asx-zoom-in-crop-mark:4536:0:0:0.awebp)
 
 
-> [**👆🏻参考**](https://juejin.cn/post/6844903791427321863)
+> ## [**👆🏻参考**](https://juejin.cn/post/6844903791427321863)
